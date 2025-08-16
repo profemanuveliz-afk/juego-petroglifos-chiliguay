@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #d6d4a2, #c7c588);
+    color: #444;
+}
+
+#game-container {
+    position: relative;
+    border: 5px solid #6b4d3f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #f0f0e0;
+}
+
+#game-canvas {
+    display: block;
+    background: linear-gradient(to top, #d6d4a2 50%, #87ceeb 100%);
+}
+
+/* Estilos para las pantallas del juego */
+.game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.game-screen.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+h1, h2, h3 {
+    color: #6b4d3f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #8a6c56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #a0816a;
+}
+
+#petroglyph-info {
+    max-width: 80%;
+}
+
+#petroglyph-image {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #6b4d3f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

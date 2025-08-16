@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes de la Cultura: La Aventura de Chiliguay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="game-screen active">
+            <h1>Guardianes de la Cultura</h1>
+            <h2>La Aventura de Chiliguay</h2>
+            <p>¡Ayuda al guardián a recolectar los petroglifos! Salta sobre las rocas y evita los peligros para proteger este tesoro de Arequipa.</p>
+            <p><strong>Instrucciones:</strong></p>
+            <ul>
+                <li>Usa las flechas del teclado ⬅️ y ➡️ para moverte.</li>
+                <li>Usa la flecha de arriba ⬆️ para saltar.</li>
+            </ul>
+            <button id="start-button">Comenzar Aventura</button>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="museum-screen" class="game-screen">
+            <h2 id="museum-title">Nivel 1 Completado</h2>
+            <div id="petroglyph-info">
+                <img id="petroglyph-image" src="" alt="Petroglifo de Chiliguay">
+                <p id="petroglyph-text"></p>
+            </div>
+            <button id="next-level-button">Siguiente Nivel</button>
+        </div>
+
+        <div id="win-screen" class="game-screen">
+            <h1>¡Misión Cumplida!</h1>
+            <p>Has protegido todos los petroglifos y te has convertido en un verdadero Guardián de la Cultura de Arequipa. ¡Gracias por tu esfuerzo!</p>
+            <button id="restart-button">Jugar de Nuevo</button>
+        </div>
+
+        <div id="game-over-screen" class="game-screen">
+            <h1>¡El petroglifo se ha roto!</h1>
+            <p>La erosión ha dañado el petroglifo. ¡Inténtalo de nuevo para protegerlo!</p>
+            <button id="retry-button">Reintentar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
